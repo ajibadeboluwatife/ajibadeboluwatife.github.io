@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ajibade Boluwatife — Portfolio</title>
+  <meta name="description" content="Ajibade Boluwatife — software developer. Portfolio, projects and contact." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>Ajibade Boluwatife</h1>
+    <p class="tagline">Software developer — web &amp; open-source</p>
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="projects" class="card-list">
+      <h2>Selected Projects</h2>
+      <article class="card">
+        <h3><a href="https://github.com/ajibadeboluwatife/project1">Project One</a></h3>
+        <p>Short description of project one — tech used, goal, impact.</p>
+      </article>
+      <article class="card">
+        <h3><a href="https://github.com/ajibadeboluwatife/project2">Project Two</a></h3>
+        <p>Short description of project two.</p>
+      </article>
+    </section>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>Short bio: what you build, languages you use, what you’re looking for.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
+      <p>Or use a lightweight form provider (Formspree, Getform) for direct messages.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Ajibade Boluwatife — <a href="https://github.com/ajibadeboluwatife">GitHub</a></p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
