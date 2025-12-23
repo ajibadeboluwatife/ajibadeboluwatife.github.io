@@ -1,0 +1,25 @@
+:root{
+  --bg:#0f1724;
+  --card:#0b1220;
+  --accent:#7dd3fc;
+  --text:#e6eef8;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background:linear-gradient(180deg,var(--bg),#071028);
+  color:var(--text);
+  line-height:1.5;
+  padding:2rem;
+}
+.site-header{max-width:900px;margin:0 auto 2rem}
+.site-header h1{margin:.2rem 0;font-size:clamp(1.6rem,3.5vw,2.4rem)}
+.tagline{color:#9fb6c9;margin:0}
+nav a{color:var(--accent);margin-right:1rem;text-decoration:none}
+.card-list{max-width:900px;margin:1.5rem auto;display:grid;gap:1rem}
+.card{background:rgba(255,255,255,0.03);padding:1rem;border-radius:8px}
+footer{max-width:900px;margin:3rem auto 0;color:#9fb6c9;font-size:.9rem}
+@media(min-width:700px){
+  .card-list{grid-template-columns:repeat(2,1fr)}
+}
